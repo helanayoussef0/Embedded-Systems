@@ -1,0 +1,203 @@
+Component: ARM Compiler 6.16 Tool: armlink [5dfeaa00]
+
+==============================================================================
+
+Section Cross References
+
+    blinky.o(.text.main) refers to joystick_mcb1700.o(.text.Joystick_Initialize) for Joystick_Initialize
+    blinky.o(.text.main) refers to joystick_mcb1700.o(.text.Joystick_GetState) for Joystick_GetState
+    blinky.o(.ARM.exidx.text.main) refers to blinky.o(.text.main) for [Anonymous Symbol]
+    irq.o(.text.SysTick_Handler) refers to irq.o(.bss.SysTick_Handler.ticks) for SysTick_Handler.ticks
+    irq.o(.text.SysTick_Handler) refers to irq.o(.bss.clock_1s) for clock_1s
+    irq.o(.text.SysTick_Handler) refers to irq.o(.bss.SysTick_Handler.timetick) for SysTick_Handler.timetick
+    irq.o(.text.SysTick_Handler) refers to irq.o(.data.SysTick_Handler.leds) for SysTick_Handler.leds
+    irq.o(.text.SysTick_Handler) refers to led_mcb1700.o(.text.LED_SetOut) for LED_SetOut
+    irq.o(.text.SysTick_Handler) refers to led_mcb1700.o(.text.LED_GetCount) for LED_GetCount
+    irq.o(.text.SysTick_Handler) refers to adc_mcb1700.o(.text.ADC_StartConversion) for ADC_StartConversion
+    irq.o(.ARM.exidx.text.SysTick_Handler) refers to irq.o(.text.SysTick_Handler) for [Anonymous Symbol]
+    adc_mcb1700.o(.text.ADC_Initialize) refers to pin_lpc17xx.o(.text.PIN_Configure) for PIN_Configure
+    adc_mcb1700.o(.text.ADC_Initialize) refers to adc_mcb1700.o(.text.__NVIC_EnableIRQ) for __NVIC_EnableIRQ
+    adc_mcb1700.o(.ARM.exidx.text.ADC_Initialize) refers to adc_mcb1700.o(.text.ADC_Initialize) for [Anonymous Symbol]
+    adc_mcb1700.o(.ARM.exidx.text.__NVIC_EnableIRQ) refers to adc_mcb1700.o(.text.__NVIC_EnableIRQ) for [Anonymous Symbol]
+    adc_mcb1700.o(.text.ADC_Uninitialize) refers to adc_mcb1700.o(.text.__NVIC_DisableIRQ) for __NVIC_DisableIRQ
+    adc_mcb1700.o(.text.ADC_Uninitialize) refers to pin_lpc17xx.o(.text.PIN_Configure) for PIN_Configure
+    adc_mcb1700.o(.ARM.exidx.text.ADC_Uninitialize) refers to adc_mcb1700.o(.text.ADC_Uninitialize) for [Anonymous Symbol]
+    adc_mcb1700.o(.ARM.exidx.text.__NVIC_DisableIRQ) refers to adc_mcb1700.o(.text.__NVIC_DisableIRQ) for [Anonymous Symbol]
+    adc_mcb1700.o(.ARM.exidx.text.ADC_StartConversion) refers to adc_mcb1700.o(.text.ADC_StartConversion) for [Anonymous Symbol]
+    adc_mcb1700.o(.text.ADC_ConversionDone) refers to adc_mcb1700.o(.bss.AD_done) for AD_done
+    adc_mcb1700.o(.ARM.exidx.text.ADC_ConversionDone) refers to adc_mcb1700.o(.text.ADC_ConversionDone) for [Anonymous Symbol]
+    adc_mcb1700.o(.text.ADC_GetValue) refers to adc_mcb1700.o(.bss.AD_done) for AD_done
+    adc_mcb1700.o(.text.ADC_GetValue) refers to adc_mcb1700.o(.bss.AD_last) for AD_last
+    adc_mcb1700.o(.ARM.exidx.text.ADC_GetValue) refers to adc_mcb1700.o(.text.ADC_GetValue) for [Anonymous Symbol]
+    adc_mcb1700.o(.ARM.exidx.text.ADC_GetResolution) refers to adc_mcb1700.o(.text.ADC_GetResolution) for [Anonymous Symbol]
+    adc_mcb1700.o(.text.ADC_IRQHandler) refers to adc_mcb1700.o(.bss.AD_last) for AD_last
+    adc_mcb1700.o(.text.ADC_IRQHandler) refers to adc_mcb1700.o(.bss.AD_done) for AD_done
+    adc_mcb1700.o(.ARM.exidx.text.ADC_IRQHandler) refers to adc_mcb1700.o(.text.ADC_IRQHandler) for [Anonymous Symbol]
+    joystick_mcb1700.o(.text.Joystick_Initialize) refers to gpio_lpc17xx.o(.text.GPIO_PortClock) for GPIO_PortClock
+    joystick_mcb1700.o(.text.Joystick_Initialize) refers to joystick_mcb1700.o(.rodata.JOYSTICK_PIN) for JOYSTICK_PIN
+    joystick_mcb1700.o(.text.Joystick_Initialize) refers to pin_lpc17xx.o(.text.PIN_Configure) for PIN_Configure
+    joystick_mcb1700.o(.text.Joystick_Initialize) refers to gpio_lpc17xx.o(.text.GPIO_SetDir) for GPIO_SetDir
+    joystick_mcb1700.o(.ARM.exidx.text.Joystick_Initialize) refers to joystick_mcb1700.o(.text.Joystick_Initialize) for [Anonymous Symbol]
+    joystick_mcb1700.o(.text.Joystick_Uninitialize) refers to joystick_mcb1700.o(.rodata.JOYSTICK_PIN) for JOYSTICK_PIN
+    joystick_mcb1700.o(.text.Joystick_Uninitialize) refers to pin_lpc17xx.o(.text.PIN_Configure) for PIN_Configure
+    joystick_mcb1700.o(.ARM.exidx.text.Joystick_Uninitialize) refers to joystick_mcb1700.o(.text.Joystick_Uninitialize) for [Anonymous Symbol]
+    joystick_mcb1700.o(.text.Joystick_GetState) refers to gpio_lpc17xx.o(.text.GPIO_PinRead) for GPIO_PinRead
+    joystick_mcb1700.o(.ARM.exidx.text.Joystick_GetState) refers to joystick_mcb1700.o(.text.Joystick_GetState) for [Anonymous Symbol]
+    led_mcb1700.o(.text.LED_Initialize) refers to gpio_lpc17xx.o(.text.GPIO_PortClock) for GPIO_PortClock
+    led_mcb1700.o(.text.LED_Initialize) refers to led_mcb1700.o(.rodata.LED_PIN) for LED_PIN
+    led_mcb1700.o(.text.LED_Initialize) refers to pin_lpc17xx.o(.text.PIN_Configure) for PIN_Configure
+    led_mcb1700.o(.text.LED_Initialize) refers to gpio_lpc17xx.o(.text.GPIO_SetDir) for GPIO_SetDir
+    led_mcb1700.o(.text.LED_Initialize) refers to gpio_lpc17xx.o(.text.GPIO_PinWrite) for GPIO_PinWrite
+    led_mcb1700.o(.ARM.exidx.text.LED_Initialize) refers to led_mcb1700.o(.text.LED_Initialize) for [Anonymous Symbol]
+    led_mcb1700.o(.text.LED_Uninitialize) refers to led_mcb1700.o(.rodata.LED_PIN) for LED_PIN
+    led_mcb1700.o(.text.LED_Uninitialize) refers to pin_lpc17xx.o(.text.PIN_Configure) for PIN_Configure
+    led_mcb1700.o(.ARM.exidx.text.LED_Uninitialize) refers to led_mcb1700.o(.text.LED_Uninitialize) for [Anonymous Symbol]
+    led_mcb1700.o(.text.LED_On) refers to led_mcb1700.o(.rodata.LED_PIN) for LED_PIN
+    led_mcb1700.o(.text.LED_On) refers to gpio_lpc17xx.o(.text.GPIO_PinWrite) for GPIO_PinWrite
+    led_mcb1700.o(.ARM.exidx.text.LED_On) refers to led_mcb1700.o(.text.LED_On) for [Anonymous Symbol]
+    led_mcb1700.o(.text.LED_Off) refers to led_mcb1700.o(.rodata.LED_PIN) for LED_PIN
+    led_mcb1700.o(.text.LED_Off) refers to gpio_lpc17xx.o(.text.GPIO_PinWrite) for GPIO_PinWrite
+    led_mcb1700.o(.ARM.exidx.text.LED_Off) refers to led_mcb1700.o(.text.LED_Off) for [Anonymous Symbol]
+    led_mcb1700.o(.text.LED_SetOut) refers to led_mcb1700.o(.text.LED_Off) for LED_Off
+    led_mcb1700.o(.text.LED_SetOut) refers to led_mcb1700.o(.text.LED_On) for LED_On
+    led_mcb1700.o(.ARM.exidx.text.LED_SetOut) refers to led_mcb1700.o(.text.LED_SetOut) for [Anonymous Symbol]
+    led_mcb1700.o(.ARM.exidx.text.LED_GetCount) refers to led_mcb1700.o(.text.LED_GetCount) for [Anonymous Symbol]
+    retarget_io.o(.ARM.exidx.text.ITM_SendChar) refers to retarget_io.o(.text.ITM_SendChar) for [Anonymous Symbol]
+    retarget_io.o(.text.ITM_ReceiveChar) refers to retarget_io.o(.data.ITM_RxBuffer) for ITM_RxBuffer
+    retarget_io.o(.ARM.exidx.text.ITM_ReceiveChar) refers to retarget_io.o(.text.ITM_ReceiveChar) for [Anonymous Symbol]
+    retarget_io.o(.text.fputc) refers to stdout.o(.data) for __stdout
+    retarget_io.o(.text.fputc) refers to retarget_io.o(.text.stdout_putchar) for stdout_putchar
+    retarget_io.o(.ARM.exidx.text.fputc) refers to retarget_io.o(.text.fputc) for [Anonymous Symbol]
+    retarget_io.o(.text.stdout_putchar) refers to retarget_io.o(.text.ITM_SendChar) for ITM_SendChar
+    retarget_io.o(.ARM.exidx.text.stdout_putchar) refers to retarget_io.o(.text.stdout_putchar) for [Anonymous Symbol]
+    retarget_io.o(.ARM.exidx.text.fgetc) refers to retarget_io.o(.text.fgetc) for [Anonymous Symbol]
+    retarget_io.o(.ARM.exidx.text.__backspace) refers to retarget_io.o(.text.__backspace) for [Anonymous Symbol]
+    retarget_io.o(.text.__aeabi_assert) refers to stderr.o(.data) for __stderr
+    retarget_io.o(.text.__aeabi_assert) refers to fwrite.o(i.fwrite) for fwrite
+    retarget_io.o(.text.__aeabi_assert) refers to fputs.o(i.fputs) for fputs
+    retarget_io.o(.text.__aeabi_assert) refers to retarget_io.o(.text.abort) for abort
+    retarget_io.o(.ARM.exidx.text.__aeabi_assert) refers to retarget_io.o(.text.__aeabi_assert) for [Anonymous Symbol]
+    retarget_io.o(.ARM.exidx.text.abort) refers to retarget_io.o(.text.abort) for [Anonymous Symbol]
+    gpio_lpc17xx.o(.ARM.exidx.text.GPIO_PortClock) refers to gpio_lpc17xx.o(.text.GPIO_PortClock) for [Anonymous Symbol]
+    gpio_lpc17xx.o(.ARM.exidx.text.GPIO_SetDir) refers to gpio_lpc17xx.o(.text.GPIO_SetDir) for [Anonymous Symbol]
+    gpio_lpc17xx.o(.ARM.exidx.text.GPIO_PinWrite) refers to gpio_lpc17xx.o(.text.GPIO_PinWrite) for [Anonymous Symbol]
+    gpio_lpc17xx.o(.ARM.exidx.text.GPIO_PinRead) refers to gpio_lpc17xx.o(.text.GPIO_PinRead) for [Anonymous Symbol]
+    gpio_lpc17xx.o(.ARM.exidx.text.GPIO_PortWrite) refers to gpio_lpc17xx.o(.text.GPIO_PortWrite) for [Anonymous Symbol]
+    gpio_lpc17xx.o(.ARM.exidx.text.GPIO_PortRead) refers to gpio_lpc17xx.o(.text.GPIO_PortRead) for [Anonymous Symbol]
+    pin_lpc17xx.o(.ARM.exidx.text.PIN_Configure) refers to pin_lpc17xx.o(.text.PIN_Configure) for [Anonymous Symbol]
+    pin_lpc17xx.o(.ARM.exidx.text.PIN_ConfigureTPIU) refers to pin_lpc17xx.o(.text.PIN_ConfigureTPIU) for [Anonymous Symbol]
+    pin_lpc17xx.o(.ARM.exidx.text.PIN_ConfigureI2C0Pins) refers to pin_lpc17xx.o(.text.PIN_ConfigureI2C0Pins) for [Anonymous Symbol]
+    startup_lpc17xx.o(RESET) refers to startup_lpc17xx.o(STACK) for __initial_sp
+    startup_lpc17xx.o(RESET) refers to startup_lpc17xx.o(.text) for Reset_Handler
+    startup_lpc17xx.o(RESET) refers to irq.o(.text.SysTick_Handler) for SysTick_Handler
+    startup_lpc17xx.o(RESET) refers to adc_mcb1700.o(.text.ADC_IRQHandler) for ADC_IRQHandler
+    startup_lpc17xx.o(.text) refers to system_lpc17xx.o(.text.SystemInit) for SystemInit
+    startup_lpc17xx.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    system_lpc17xx.o(.text.SystemCoreClockUpdate) refers to uldiv.o(.text) for __aeabi_uldivmod
+    system_lpc17xx.o(.text.SystemCoreClockUpdate) refers to system_lpc17xx.o(.data.SystemCoreClock) for SystemCoreClock
+    system_lpc17xx.o(.ARM.exidx.text.SystemCoreClockUpdate) refers to system_lpc17xx.o(.text.SystemCoreClockUpdate) for [Anonymous Symbol]
+    system_lpc17xx.o(.ARM.exidx.text.SystemInit) refers to system_lpc17xx.o(.text.SystemInit) for [Anonymous Symbol]
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    fputs.o(i.fputs) refers to retarget_io.o(.text.fputc) for fputc
+    fwrite.o(i.fwrite) refers to retarget_io.o(.text.fputc) for fputc
+    fputs_e.o(.text) refers to retarget_io.o(.text.fputc) for fputc
+    fwrite_e.o(.text) refers to retarget_io.o(.text.fputc) for fputc
+    uldiv.o(.text) refers to llushr.o(.text) for __aeabi_llsr
+    uldiv.o(.text) refers to llshl.o(.text) for __aeabi_llsl
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_lpc17xx.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_lpc17xx.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to blinky.o(.text.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to blinky.o(.text.main) for main
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing blinky.o(.text), (0 bytes).
+    Removing blinky.o(.ARM.exidx.text.main), (8 bytes).
+    Removing blinky.o(.ARM.use_no_argv), (4 bytes).
+    Removing irq.o(.text), (0 bytes).
+    Removing irq.o(.ARM.exidx.text.SysTick_Handler), (8 bytes).
+    Removing adc_mcb1700.o(.text), (0 bytes).
+    Removing adc_mcb1700.o(.text.ADC_Initialize), (74 bytes).
+    Removing adc_mcb1700.o(.ARM.exidx.text.ADC_Initialize), (8 bytes).
+    Removing adc_mcb1700.o(.text.__NVIC_EnableIRQ), (16 bytes).
+    Removing adc_mcb1700.o(.ARM.exidx.text.__NVIC_EnableIRQ), (8 bytes).
+    Removing adc_mcb1700.o(.text.ADC_Uninitialize), (66 bytes).
+    Removing adc_mcb1700.o(.ARM.exidx.text.ADC_Uninitialize), (8 bytes).
+    Removing adc_mcb1700.o(.text.__NVIC_DisableIRQ), (24 bytes).
+    Removing adc_mcb1700.o(.ARM.exidx.text.__NVIC_DisableIRQ), (8 bytes).
+    Removing adc_mcb1700.o(.ARM.exidx.text.ADC_StartConversion), (8 bytes).
+    Removing adc_mcb1700.o(.text.ADC_ConversionDone), (22 bytes).
+    Removing adc_mcb1700.o(.ARM.exidx.text.ADC_ConversionDone), (8 bytes).
+    Removing adc_mcb1700.o(.text.ADC_GetValue), (36 bytes).
+    Removing adc_mcb1700.o(.ARM.exidx.text.ADC_GetValue), (8 bytes).
+    Removing adc_mcb1700.o(.text.ADC_GetResolution), (4 bytes).
+    Removing adc_mcb1700.o(.ARM.exidx.text.ADC_GetResolution), (8 bytes).
+    Removing adc_mcb1700.o(.ARM.exidx.text.ADC_IRQHandler), (8 bytes).
+    Removing joystick_mcb1700.o(.text), (0 bytes).
+    Removing joystick_mcb1700.o(.ARM.exidx.text.Joystick_Initialize), (8 bytes).
+    Removing joystick_mcb1700.o(.text.Joystick_Uninitialize), (48 bytes).
+    Removing joystick_mcb1700.o(.ARM.exidx.text.Joystick_Uninitialize), (8 bytes).
+    Removing joystick_mcb1700.o(.ARM.exidx.text.Joystick_GetState), (8 bytes).
+    Removing led_mcb1700.o(.text), (0 bytes).
+    Removing led_mcb1700.o(.text.LED_Initialize), (88 bytes).
+    Removing led_mcb1700.o(.ARM.exidx.text.LED_Initialize), (8 bytes).
+    Removing led_mcb1700.o(.text.LED_Uninitialize), (48 bytes).
+    Removing led_mcb1700.o(.ARM.exidx.text.LED_Uninitialize), (8 bytes).
+    Removing led_mcb1700.o(.ARM.exidx.text.LED_On), (8 bytes).
+    Removing led_mcb1700.o(.ARM.exidx.text.LED_Off), (8 bytes).
+    Removing led_mcb1700.o(.ARM.exidx.text.LED_SetOut), (8 bytes).
+    Removing led_mcb1700.o(.ARM.exidx.text.LED_GetCount), (8 bytes).
+    Removing retarget_io.o(.text), (0 bytes).
+    Removing retarget_io.o(.text.ITM_SendChar), (46 bytes).
+    Removing retarget_io.o(.ARM.exidx.text.ITM_SendChar), (8 bytes).
+    Removing retarget_io.o(.text.ITM_ReceiveChar), (32 bytes).
+    Removing retarget_io.o(.ARM.exidx.text.ITM_ReceiveChar), (8 bytes).
+    Removing retarget_io.o(.text.fputc), (26 bytes).
+    Removing retarget_io.o(.ARM.exidx.text.fputc), (8 bytes).
+    Removing retarget_io.o(.text.stdout_putchar), (8 bytes).
+    Removing retarget_io.o(.ARM.exidx.text.stdout_putchar), (8 bytes).
+    Removing retarget_io.o(.text.fgetc), (6 bytes).
+    Removing retarget_io.o(.ARM.exidx.text.fgetc), (8 bytes).
+    Removing retarget_io.o(.text.__backspace), (6 bytes).
+    Removing retarget_io.o(.ARM.exidx.text.__backspace), (8 bytes).
+    Removing retarget_io.o(.text.__aeabi_assert), (180 bytes).
+    Removing retarget_io.o(.ARM.exidx.text.__aeabi_assert), (8 bytes).
+    Removing retarget_io.o(.text.abort), (2 bytes).
+    Removing retarget_io.o(.ARM.exidx.text.abort), (8 bytes).
+    Removing retarget_io.o(.data.ITM_RxBuffer), (4 bytes).
+    Removing gpio_lpc17xx.o(.text), (0 bytes).
+    Removing gpio_lpc17xx.o(.ARM.exidx.text.GPIO_PortClock), (8 bytes).
+    Removing gpio_lpc17xx.o(.ARM.exidx.text.GPIO_SetDir), (8 bytes).
+    Removing gpio_lpc17xx.o(.ARM.exidx.text.GPIO_PinWrite), (8 bytes).
+    Removing gpio_lpc17xx.o(.ARM.exidx.text.GPIO_PinRead), (8 bytes).
+    Removing gpio_lpc17xx.o(.text.GPIO_PortWrite), (26 bytes).
+    Removing gpio_lpc17xx.o(.ARM.exidx.text.GPIO_PortWrite), (8 bytes).
+    Removing gpio_lpc17xx.o(.text.GPIO_PortRead), (14 bytes).
+    Removing gpio_lpc17xx.o(.ARM.exidx.text.GPIO_PortRead), (8 bytes).
+    Removing pin_lpc17xx.o(.text), (0 bytes).
+    Removing pin_lpc17xx.o(.ARM.exidx.text.PIN_Configure), (8 bytes).
+    Removing pin_lpc17xx.o(.text.PIN_ConfigureTPIU), (24 bytes).
+    Removing pin_lpc17xx.o(.ARM.exidx.text.PIN_ConfigureTPIU), (8 bytes).
+    Removing pin_lpc17xx.o(.text.PIN_ConfigureI2C0Pins), (30 bytes).
+    Removing pin_lpc17xx.o(.ARM.exidx.text.PIN_ConfigureI2C0Pins), (8 bytes).
+    Removing startup_lpc17xx.o(HEAP), (0 bytes).
+    Removing system_lpc17xx.o(.text), (0 bytes).
+    Removing system_lpc17xx.o(.text.SystemCoreClockUpdate), (248 bytes).
+    Removing system_lpc17xx.o(.ARM.exidx.text.SystemCoreClockUpdate), (8 bytes).
+    Removing system_lpc17xx.o(.ARM.exidx.text.SystemInit), (8 bytes).
+    Removing system_lpc17xx.o(.data.SystemCoreClock), (4 bytes).
+
+75 unused section(s) (total 1398 bytes) removed from the image.
